@@ -1,0 +1,7 @@
+{
+"objective": {
+		"Win": "Well done. Keep it!",
+		"Lose": "Sorry, that's not right. You have to do better!",
+		"Retry": "To retry again, look at the button in front of you and left click to retry!"
+	}
+}

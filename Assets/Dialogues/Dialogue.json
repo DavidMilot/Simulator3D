@@ -1,0 +1,25 @@
+{
+	"tutorial": 
+	[
+		{
+			"text":"Hello, we need your help with collecting medical supplies from the shelf in front of you.",
+			"standby":"[ENTER]"
+		},
+		{
+			"text":"Look at each item to read their description.",
+			"standby":"[WAIT]"
+		},
+		{			
+			"text":"Nice work! To interact with any item, look at the item and then left click to grab it.",
+			"standby":"[WAIT]"
+		},
+		{
+			"text":"To place the item, look at any empty spot on the shelf and left click again.",
+			"standby":"[WAIT]"
+		},
+		{
+			"text":"Good! Now try to match each item from the top shelf and place it in correct spot according to the labels.",
+			"standby":"[ENTER]"
+		}		
+	]
+}
