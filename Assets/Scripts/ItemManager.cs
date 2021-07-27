@@ -10,6 +10,9 @@ using UnityEngine;
 public class ItemManager : MonoBehaviour
 {
     [SerializeField]
+    private TextAsset _itemJSONFile;
+
+    [SerializeField]
     private GameObject _sanitizer;
 
     [SerializeField]
@@ -22,6 +25,8 @@ public class ItemManager : MonoBehaviour
     private GameObject _gloveBox;
 
     private Dictionary<string, GameObject> _medItems = new Dictionary<string, GameObject>();
+
+    private Dictionary<string, string> _medItemDescription = new Dictionary<string, string>();
 
     // Start is called before the first frame update
     void Start()
@@ -45,11 +50,25 @@ public class ItemManager : MonoBehaviour
         _vial.AddComponent<Vial>();
         _vial.GetComponent<Vial>().Setup(medItem);
         _medItems.Add("vial", _vial);
+
+        JSonReader jReader = new JSonReader();
+        ItemDescription[] itemDescriptions = jReader.ReadItemJSONFile(_itemJSONFile);
+
+        for (int i = 0; i < itemDescriptions.Length; i++)
+        {
+            _medItemDescription.Add(itemDescriptions[i].text, itemDescriptions[i].item);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public string GetItemDescription(string name)
     {
-        
+        string desc;
+
+        if (_medItemDescription.TryGetValue(name, out desc))
+        {
+            return desc;
+        }
+
+        return null;
     }
 }

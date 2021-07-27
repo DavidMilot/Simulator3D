@@ -1,0 +1,21 @@
+{
+	"item": 
+	[
+		{
+			"text":"Use to inject medication into body.",
+			"item":"syringe"
+		},
+		{
+			"text": "Bottle of hand sanitizer.",
+			"item": "sanitizer"
+		},
+		{
+			"text": "Filled with liquid medication.",
+			"item": "vial"
+		},
+		{
+			"text": "Medical latex gloves.",
+			"item": "glovebox"
+		}		
+	]
+}

@@ -26,8 +26,7 @@ public class AudioManager : MonoBehaviour
         PickupVial,
         PickupGloveBox,
         PickupSanitizer,
-        DropItem,
-        HospitalAmbient
+        DropItem
     }
 
     void Awake()
@@ -53,7 +52,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlaySound(AudioSoundEffects effect, bool loop, bool randomPitch)
+    public void PlaySound(AudioSoundEffects effect, bool loop, bool randomPitch, Vector3 pos)
     {
         for (int i = 0; i < _audioSources.Count; i++)
         {
@@ -67,6 +66,8 @@ public class AudioManager : MonoBehaviour
                 {
                     _audioSources[i].pitch = 1.0f;
                 }
+
+                _audioSources[i].transform.position = pos;
                 _audioSources[i].loop = loop;
                 _audioSources[i].clip = _clips[(int)effect];
                 _audioSources[i].Play();
