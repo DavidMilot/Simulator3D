@@ -8,8 +8,23 @@ using UnityEngine;
 
 public class MedItem : IItem
 {
-    public void Grab()
+    public void Setup()
     {
     
+    }
+
+    public void Grab()
+    {
+        
+    }
+
+    public void Drop()
+    {
+    
+    }
+
+    public void Reset()
+    {
+
     }
 }

@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5931877189677563101}
   - component: {fileID: 5931877189676559585}
   - component: {fileID: 5931877189672337517}
+  - component: {fileID: 8739466091145331268}
   m_Layer: 0
   m_Name: GloveBox
-  m_TagString: Untagged
+  m_TagString: GloveBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5931877189674400481}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 3.1295576, y: 1.6975117, z: 2.7}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
@@ -96,3 +97,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.050000027, y: 0.0903413, z: 0.020000022}
   m_Center: {x: 0, y: 0, z: 0.010000003}
+--- !u!114 &8739466091145331268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5931877189674400481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46b9c97fc2156a479b446033b66cec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

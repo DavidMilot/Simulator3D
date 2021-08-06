@@ -20,3 +20,6 @@ www.zapsplat.com
 
 Hospital Ambience | Background noise and sound effects
 https://www.youtube.com/watch?v=lYNN-EFdTmU
+
+VR Cartoon Hand
+https://assetstore.unity.com/packages/3d/vr-cartoon-hand-65978

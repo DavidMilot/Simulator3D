@@ -8,6 +8,11 @@ TagManager:
   - Vial
   - GloveBox
   - Syringe
+  - VialLoc
+  - SyringeLoc
+  - GloveBoxLoc
+  - SanitizerLoc
+  - ItemSpot
   layers:
   - Default
   - TransparentFX

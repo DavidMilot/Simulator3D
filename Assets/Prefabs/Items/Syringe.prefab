@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1851958603992255346}
   - component: {fileID: 1851958603993234554}
   - component: {fileID: 1851958603997057208}
+  - component: {fileID: 8399438997487524428}
   m_Layer: 0
   m_Name: Syringe
-  m_TagString: Untagged
+  m_TagString: Syringe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851958603991155566}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.418, y: 1.745, z: 2.7}
   m_LocalScale: {x: 2, y: 1.5202, z: 2.2495}
   m_Children: []
@@ -96,3 +97,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05201745, y: 0.16694911, z: 0.020277444}
   m_Center: {x: 0.0004968643, y: -0.03913473, z: 0.0000000024840787}
+--- !u!114 &8399438997487524428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851958603991155566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35934057e075424aa5d0b1e6f5559fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

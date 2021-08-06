@@ -19,16 +19,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private AudioSource _audioSource;
 
-    public enum AudioSoundEffects
-    {
-        Click,
-        PickUpSyringe,
-        PickupVial,
-        PickupGloveBox,
-        PickupSanitizer,
-        DropItem
-    }
-
     void Awake()
     {
         if (Instance != null)
@@ -52,7 +42,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlaySound(AudioSoundEffects effect, bool loop, bool randomPitch, Vector3 pos)
+    public void PlaySound(Enums.AudioSoundEffects effect, bool loop, bool randomPitch, Vector3 pos)
     {
         for (int i = 0; i < _audioSources.Count; i++)
         {
@@ -85,7 +75,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void StopSound(AudioSoundEffects effects)
+    public void StopSound(Enums.AudioSoundEffects effects)
     {
         for (int i = 0; i < _audioSources.Count; i++)
         {

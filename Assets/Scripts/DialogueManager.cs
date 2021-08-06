@@ -43,6 +43,7 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         LoadTutorialFile();
+        InitOrderText();
     }
 
     public void LoadTutorialFile()
@@ -78,5 +79,20 @@ public class DialogueManager : MonoBehaviour
     public string GetStandby()
     {
         return _tutorialLines[_tutorialLineIndex].standby;
+    }
+
+    public void InitOrderText()
+    {
+        _text.text = "Place items in correct order or push the spacebar reset.";
+    }
+
+    public void GoodOrderText()
+    {
+        _text.text = "That is the correct order. Push the spacebar to try again.";
+    }
+
+    public void BadOrderText()
+    {
+        _text.text = "That is an incorrect order. Push the spacebar to try again.";
     }
 }

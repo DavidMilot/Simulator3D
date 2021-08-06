@@ -11,12 +11,6 @@ public class JSonReader : MonoBehaviour
 
         Tutorial tutorial = JsonUtility.FromJson<Tutorial>(jsonFile.text);
 
-        /*
-        foreach (TutorialLine line in tutorial.tutorial)
-        {
-            Debug.Log("Found tutorial: " + line.text + " " + line.standby);
-        }*/
-
         return tutorial;
     }
 
